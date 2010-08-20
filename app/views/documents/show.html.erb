@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @document.name %>
+</p>
+
+<p>
+  <b>In date:</b>
+  <%= @document.in_date %>
+</p>
+
+<p>
+  <b>Out date:</b>
+  <%= @document.out_date %>
+</p>
+
+<p>
+  <b>Recieve date:</b>
+  <%= @document.recieve_date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @document.description %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @document.status.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

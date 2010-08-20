@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  in_date: 2010-08-21 00:25:45
+  out_date: 2010-08-21 00:25:45
+  recieve_date: 2010-08-21 00:25:45
+  description: MyText
+  status: 
+
+two:
+  name: MyString
+  in_date: 2010-08-21 00:25:45
+  out_date: 2010-08-21 00:25:45
+  recieve_date: 2010-08-21 00:25:45
+  description: MyText
+  status: 
