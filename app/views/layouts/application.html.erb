@@ -14,10 +14,16 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "handheld", :media => "handheld" %>
+  <%= stylesheet_link_tag "layout" %>
+  <%= stylesheet_link_tag "datepicker" %>
   <%= javascript_include_tag "jquery.min" %>
   <%= javascript_include_tag "rails" %>
   <%= javascript_include_tag "modernizr-1.5.min" %>
-  <%= javascript_include_tag "application"%>
+  <%= javascript_include_tag "datepicker" %>
+  <%= javascript_include_tag "eye" %>
+  <%= javascript_include_tag "utils" %>
+  <%= javascript_include_tag "layout" %>
+  <%= javascript_include_tag "application" %>
 
 </head>
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
@@ -51,5 +57,6 @@
   <script src="/javascripts/profiling/yahoo-profiling.min.js?v=1"></script>
   <script src="/javascripts/profiling/config.js?v=1"></script>
 
+ 
 </body>
 </html>
