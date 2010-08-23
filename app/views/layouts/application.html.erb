@@ -1,14 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-  <title>Docstat</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
-</head>
-<body>
+  <meta charset="utf-8">
+  <!--[if IE]><![endif]-->
 
-<%= yield %>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <%= stylesheet_link_tag "application" %>
+  <%= stylesheet_link_tag "handheld", :media => "handheld" %>
+  <%= javascript_include_tag "jquery.min" %>
+  <%= javascript_include_tag "rails" %>
+  <%= javascript_include_tag "modernizr-1.5.min" %>
+  <%= javascript_include_tag "application"%>
+
+</head>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+  <div id="container">
+    <header>
+
+    </header>
+    
+    <div id="main">
+      <%= yield %>
+    </div>
+    
+    <footer>
+
+    </footer>
+  </div> <!-- end of #container -->
+
+  <script>!window.jQuery && document.write('<script src="/javascripts/jquery-1.4.2.min.js"><\/script>')</script>
+  <%= javascript_include_tag "plugins" %>
+  <%= javascript_include_tag "script" %>
+
+  <!--[if lt IE 7 ]>
+    <script src="/javascripts/dd_belatedpng.js?v=1"></script>
+  <![endif]-->
+
+  <script src="/javascripts/profiling/yahoo-profiling.min.js?v=1"></script>
+  <script src="/javascripts/profiling/config.js?v=1"></script>
 
 </body>
 </html>
