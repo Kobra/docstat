@@ -12,11 +12,12 @@
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-  <link rel="stylesheet" href="/stylesheets/style.css?v=1">
-  <link rel="stylesheet" media="handheld" href="/stylesheets/handheld.css?v=1">
+  <%= stylesheet_link_tag "application" %>
+  <%= stylesheet_link_tag "handheld", :media => "handheld" %>
   <%= javascript_include_tag "jquery.min" %>
   <%= javascript_include_tag "rails" %>
   <%= javascript_include_tag "modernizr-1.5.min" %>
+  <%= javascript_include_tag "application"%>
 
 </head>
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
@@ -40,8 +41,8 @@
   </div> <!-- end of #container -->
 
   <script>!window.jQuery && document.write('<script src="/javascripts/jquery-1.4.2.min.js"><\/script>')</script>
-  <script src="/javascripts/plugins.js?v=1"></script>
-  <script src="/javascripts/script.js?v=1"></script>
+  <%= javascript_include_tag "plugins" %>
+  <%= javascript_include_tag "script" %>
 
   <!--[if lt IE 7 ]>
     <script src="/javascripts/dd_belatedpng.js?v=1"></script>
@@ -50,13 +51,5 @@
   <script src="/javascripts/profiling/yahoo-profiling.min.js?v=1"></script>
   <script src="/javascripts/profiling/config.js?v=1"></script>
 
-  <script>
-   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']]; 
-   (function(d, t) {
-    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-    g.async = true; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
-  
 </body>
 </html>
