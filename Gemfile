@@ -30,3 +30,5 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise', :ref => '81c49c69
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem "show_for", :git => "git://github.com/plataformatec/show_for.git"
