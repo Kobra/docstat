@@ -13,9 +13,9 @@
 
   <div class="inputs">
     <%= f.input :name %>
-    <%= f.input :in_date %>
-    <%= f.input :out_date %>
-    <%= f.input :recieve_date %>
+    <%= f.input :in_date, :as => :string %>
+    <%= f.input :out_date, :as => :string %>
+    <%= f.input :receive_date, :as => :string %>
     <%= f.input :description %>
     <%= f.association :status %>
   </div>

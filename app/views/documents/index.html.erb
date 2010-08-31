@@ -18,9 +18,9 @@
     <td><%= document.name %></td>
     <td><%= document.in_date %></td>
     <td><%= document.out_date %></td>
-    <td><%= document.recieve_date %></td>
+    <td><%= document.receive_date %></td>
     <td><%= document.description %></td>
-    <td><%= document.status.name %></td>
+    <td><%= document.status.name unless document.status.nil? %></td>
     <td><%= link_to 'Show', document %></td>
     <td><%= link_to 'Edit', edit_document_path(document) %></td>
     <td><%= link_to 'Destroy', document, :confirm => 'Are you sure?', :method => :delete %></td>
