@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/plataformatec/devise
-  revision: 81c49c6
-  ref: 81c49c69df752a6c8c40
-  specs:
-    devise (1.2.0)
-      bcrypt-ruby (~> 2.1.2)
-      warden (~> 0.10.7)
-
-GIT
   remote: git://github.com/plataformatec/show_for.git
   revision: da1c6351e7cf75882370dd0c05ade42e23785857
   specs:
@@ -15,55 +6,9 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/simple_form.git
-  revision: ff77bee
-  tag: v1.2.2
+  revision: 014f3883efd6d3d929b6beff8e3eb5b289e9e374
   specs:
     simple_form (1.2.2)
-
-GIT
-  remote: git://github.com/rails/rails.git
-  revision: b6f9932
-  tag: v3.0.0_RC
-  specs:
-    actionmailer (3.0.0.rc)
-      actionpack (= 3.0.0.rc)
-      mail (~> 2.2.5)
-    actionpack (3.0.0.rc)
-      activemodel (= 3.0.0.rc)
-      activesupport (= 3.0.0.rc)
-      builder (~> 2.1.2)
-      erubis (~> 2.6.6)
-      i18n (~> 0.4.1)
-      rack (~> 1.2.1)
-      rack-mount (~> 0.6.9)
-      rack-test (~> 0.5.4)
-      tzinfo (~> 0.3.22)
-    activemodel (3.0.0.rc)
-      activesupport (= 3.0.0.rc)
-      builder (~> 2.1.2)
-      i18n (~> 0.4.1)
-    activerecord (3.0.0.rc)
-      activemodel (= 3.0.0.rc)
-      activesupport (= 3.0.0.rc)
-      arel (~> 0.4.0)
-      tzinfo (~> 0.3.22)
-    activeresource (3.0.0.rc)
-      activemodel (= 3.0.0.rc)
-      activesupport (= 3.0.0.rc)
-    activesupport (3.0.0.rc)
-    rails (3.0.0.rc)
-      actionmailer (= 3.0.0.rc)
-      actionpack (= 3.0.0.rc)
-      activerecord (= 3.0.0.rc)
-      activeresource (= 3.0.0.rc)
-      activesupport (= 3.0.0.rc)
-      bundler (>= 1.0.0.rc.1)
-      railties (= 3.0.0.rc)
-    railties (3.0.0.rc)
-      actionpack (= 3.0.0.rc)
-      activesupport (= 3.0.0.rc)
-      rake (>= 0.8.3)
-      thor (~> 0.14.0)
 
 GIT
   remote: http://github.com/josevalim/inherited_resources.git
@@ -77,10 +22,39 @@ GEM
   remote: http://rubygems.org/
   specs:
     abstract (1.0.0)
-    arel (0.4.0)
-      activesupport (>= 3.0.0.beta)
+    actionmailer (3.0.0)
+      actionpack (= 3.0.0)
+      mail (~> 2.2.5)
+    actionpack (3.0.0)
+      activemodel (= 3.0.0)
+      activesupport (= 3.0.0)
+      builder (~> 2.1.2)
+      erubis (~> 2.6.6)
+      i18n (~> 0.4.1)
+      rack (~> 1.2.1)
+      rack-mount (~> 0.6.12)
+      rack-test (~> 0.5.4)
+      tzinfo (~> 0.3.23)
+    activemodel (3.0.0)
+      activesupport (= 3.0.0)
+      builder (~> 2.1.2)
+      i18n (~> 0.4.1)
+    activerecord (3.0.0)
+      activemodel (= 3.0.0)
+      activesupport (= 3.0.0)
+      arel (~> 1.0.0)
+      tzinfo (~> 0.3.23)
+    activeresource (3.0.0)
+      activemodel (= 3.0.0)
+      activesupport (= 3.0.0)
+    activesupport (3.0.0)
+    arel (1.0.1)
+      activesupport (~> 3.0.0)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
+    devise (1.1.2)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 0.10.7)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     has_scope (0.5.0)
@@ -92,10 +66,23 @@ GEM
     mime-types (1.16)
     polyglot (0.3.1)
     rack (1.2.1)
-    rack-mount (0.6.11)
+    rack-mount (0.6.13)
       rack (>= 1.0.0)
     rack-test (0.5.4)
       rack (>= 1.0)
+    rails (3.0.0)
+      actionmailer (= 3.0.0)
+      actionpack (= 3.0.0)
+      activerecord (= 3.0.0)
+      activeresource (= 3.0.0)
+      activesupport (= 3.0.0)
+      bundler (~> 1.0.0)
+      railties (= 3.0.0)
+    railties (3.0.0)
+      actionpack (= 3.0.0)
+      activesupport (= 3.0.0)
+      rake (>= 0.8.4)
+      thor (~> 0.14.0)
     rake (0.8.7)
     responders (0.6.2)
     sqlite3-ruby (1.3.1)
@@ -110,9 +97,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  devise!
+  devise
   inherited_resources!
-  rails!
+  rails (= 3.0.0)
   show_for!
   simple_form!
   sqlite3-ruby
