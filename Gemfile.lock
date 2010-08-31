@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: http://github.com/josevalim/inherited_resources.git
-  revision: 0c24075
+  revision: 2707d5e8687a533f5bfae7ca89796e8e9d6fe9b4
   specs:
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
