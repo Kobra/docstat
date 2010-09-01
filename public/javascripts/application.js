@@ -2,7 +2,7 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 // $(function() {$.datepicker.formatDate('dd.mm.yyyy');});
-$(function() {$("#document_in_date").datepicker.();});
+$(function() {$("#document_in_date").datepicker();});
 $(function() {$("#document_out_date").datepicker();});
 $(function() {$("#document_receive_date").datepicker();});
 
