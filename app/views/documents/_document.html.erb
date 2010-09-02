@@ -2,9 +2,9 @@
 <% show_for document do |d| %>
   <tr>
     <td><%= d.attribute :name, :label => false %></td>
-    <td><%= d.attribute :in_date, :label => false, :format => "%d.%m.%Y" %></td>
-    <td><%= d.attribute :out_date, :label => false, :format => "%d.%m.%Y" %></td>
-    <td><%= d.attribute :receive_date, :label => false, :format => "%d.%m.%Y" %></td>
+    <td><%= d.attribute :in_date, :label => false %></td>
+    <td><%= d.attribute :out_date, :label => false %></td>
+    <td><%= d.attribute :receive_date, :label => false %></td>
     <td><%= d.attribute :description, :label => false %></td>
     <td><%= d.attribute :status_name, :label => false %></td>
     <td><%= link_to 'Show', document %></td>
