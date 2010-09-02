@@ -21,7 +21,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'inherited_resources', :git => 'http://github.com/josevalim/inherited_resources.git'
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'devise'
-gem "show_for", :git => "git://github.com/plataformatec/show_for.git"
+# gem "show_for", :git => "git://github.com/plataformatec/show_for.git"
+gem "show_for", :git => "git://github.com/Kobra/show_for.git"
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
