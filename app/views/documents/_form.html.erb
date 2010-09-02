@@ -13,7 +13,7 @@
 
   <div class="inputs">
     <%= f.input :name %>
-    <%= f.input :in_date, :as => :string %>
+    <%= f.input :in_date, :as => :string, :format => "%d.%m.%Y" %>
     <%= f.input :out_date, :as => :string %>
     <%= f.input :receive_date, :as => :string %>
     <%= f.input :description %>
