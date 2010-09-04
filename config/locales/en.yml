@@ -9,11 +9,13 @@ en:
       long: "%d %B %Y"
   
   doclist: Documents listing
+  docedit: Edit document
   actions: Actions
   confirm: Are you sure?
   new_document: New document
   show: Show
   edit: Edit
+  back: Back
   destroy: Destroy
   statuses: Statuses
   name: Name

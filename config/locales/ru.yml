@@ -9,11 +9,13 @@ ru:
       long: "%d %B %Y"
   
   doclist: Просмотр документов
+  docedit: Редактирование документа
   actions: Действия
   confirm: Вы уверены?
   new_document: Новый документ
   show: Показать
   edit: Редактировать
+  back: Назад
   destroy: Удалить
   statuses: Статусы
   name: Имя

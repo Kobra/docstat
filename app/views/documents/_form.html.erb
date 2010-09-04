@@ -13,14 +13,14 @@
 
   <div class="inputs">
     <%= f.input :name %>
-    <%= f.input :in_date, :as => :string, :format => "%d.%m.%Y" %>
-    <%= f.input :out_date, :as => :string %>
-    <%= f.input :receive_date, :as => :string %>
+    <%= f.input :in_date, :as => :string, :input_html => { :value => @document.simple_form_datetime(:in_date) } %>
+    <%= f.input :out_date, :as => :string, :input_html => { :value => @document.simple_form_datetime(:out_date) } %>
+    <%= f.input :receive_date, :as => :string, :input_html => { :value => @document.simple_form_datetime(:receive_date) } %>
     <%= f.input :description %>
     <%= f.association :status %>
   </div>
 
   <div class="actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Сохранить" %>
   </div>
 <% end %>
