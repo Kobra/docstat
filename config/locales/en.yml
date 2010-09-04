@@ -17,6 +17,7 @@ en:
   edit: Edit
   back: Back
   destroy: Destroy
+  submit: Save
   statuses: Statuses
   name: Name
   in_date: In date
