@@ -2,4 +2,33 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  time:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+  
+  doclist: Documents listing
+  actions: Actions
+  confirm: Are you sure?
+  new_document: New document
+  show: Show
+  edit: Edit
+  destroy: Destroy
+  statuses: Statuses
   name: Name
+  in_date: In date
+  out_date: Out date
+  receive_date: Receive date
+  description: Description
+  status: Status
+
+  activerecord:
+    attributes:
+      document:
+        name: Name
+        in_date: In date
+        out_date: Out date
+        receive_date: Receive date
+        description: Description
+        status: Status

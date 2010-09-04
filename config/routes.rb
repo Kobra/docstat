@@ -1,8 +1,10 @@
 Docstat::Application.routes.draw do
-  resources :statuses
 
-  resources :documents
-
+  scope "(:locale)", :locale => /ru|en/ do
+    resources :statuses
+    resources :documents
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -52,6 +54,7 @@ Docstat::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+  match '/:locale' => 'documents#index'
   root :to => "documents#index"
 
   # See how all your routes lay out with "rake routes"

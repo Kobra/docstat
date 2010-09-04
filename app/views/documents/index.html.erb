@@ -1,5 +1,10 @@
+<p><% if I18n.locale == :ru %><strong>Русский</strong><% else %><%= link_to('Русский', 'ru') %><% end %>
+<% if I18n.locale == :en %><strong>English</strong><% else %><%= link_to('English', 'en') %><% end %></p>
+
+<br />
 <h1><%=t :doclist%></h1>
 <br />
+
 <table cellspacing="1" cellpadding="1" border="1">
   <tr>
     <th><%=t :name %></th>
@@ -16,5 +21,5 @@
 
 <br />
 
-<%= link_to 'New Document', new_document_path %>
-<p><%= link_to 'Statuses', statuses_path %></p>
+<%= link_to t(:new_document), new_document_path %>
+<p><%= link_to t(:statuses), statuses_path %></p>

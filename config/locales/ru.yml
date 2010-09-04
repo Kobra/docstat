@@ -5,9 +5,17 @@ ru:
   time:
     formats:
       default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
   
   doclist: Просмотр документов
   actions: Действия
+  confirm: Вы уверены?
+  new_document: Новый документ
+  show: Показать
+  edit: Редактировать
+  destroy: Удалить
+  statuses: Статусы
   name: Имя
   in_date: Дата поступления
   out_date: Дата отправки
